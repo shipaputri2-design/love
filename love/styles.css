@@ -1,0 +1,35 @@
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#heart {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+.love {
+  position: absolute;
+  color: #ff3366;
+  font-weight: bold;
+  font-size: 14px;
+  animation: float 3s infinite;
+}
+
+/* Efek hati berdenyut */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Efek teks naik-turun */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
